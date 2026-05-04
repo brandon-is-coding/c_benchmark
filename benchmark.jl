@@ -64,7 +64,7 @@ function benchmark1()
 	end
 
 end
-benchmark1()
+# benchmark1()
 
 
 # function benchmark2()
@@ -73,16 +73,20 @@ benchmark1()
 # function()
 # end
 
-# n=Int32(10000)
-# A=rand(Int32(1):Int32(1000),n)
-# B=rand(Int32(1):Int32(1000),n)
-# @code_native add_vec1(A,B,n)
+function GenCode_vec_add1()
+	n=Int32(10000)
+	A=rand(Int32(1):Int32(1000),n)
+	B=rand(Int32(1):Int32(1000),n)
+	@code_native add_vec1(A,B,n)
+end
+# GenCode_vec_add1()
 
-
-# n=Int32(10000)
-# A=rand(Int32(1):Int32(1000),n)
-# B=rand(Int32(1):Int32(1000),n)
-# C = Vector{Int32}(undef, n)
-# @code_native add_vec2(A,B,C,n)
-
+function GenCode_vec_add2()
+	n=Int32(10000)
+	A=rand(Int32(1):Int32(1000),n)
+	B=rand(Int32(1):Int32(1000),n)
+	C = Vector{Int32}(undef, n)
+	@code_native add_vec2(A,B,C,n)
+end
+GenCode_vec_add2()
 

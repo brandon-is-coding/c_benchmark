@@ -136,36 +136,10 @@ LBB2_2:                                 ;   in Loop: Header=BB2_1 Depth=1
 	ldr	w10, [sp]
 	add	w10, w10, #1
 	str	w8, [x9, w10, sxtw #2]
-	ldr	x8, [sp, #24]
-	ldr	w9, [sp]
-	add	w9, w9, #2
-	ldr	w8, [x8, w9, sxtw #2]
-	ldr	x9, [sp, #16]
-	ldr	w10, [sp]
-	add	w10, w10, #2
-	ldr	w9, [x9, w10, sxtw #2]
-	add	w8, w8, w9
-	ldr	x9, [sp, #8]
-	ldr	w10, [sp]
-	add	w10, w10, #2
-	str	w8, [x9, w10, sxtw #2]
-	ldr	x8, [sp, #24]
-	ldr	w9, [sp]
-	add	w9, w9, #3
-	ldr	w8, [x8, w9, sxtw #2]
-	ldr	x9, [sp, #16]
-	ldr	w10, [sp]
-	add	w10, w10, #3
-	ldr	w9, [x9, w10, sxtw #2]
-	add	w8, w8, w9
-	ldr	x9, [sp, #8]
-	ldr	w10, [sp]
-	add	w10, w10, #3
-	str	w8, [x9, w10, sxtw #2]
 	b	LBB2_3
 LBB2_3:                                 ;   in Loop: Header=BB2_1 Depth=1
 	ldr	w8, [sp]
-	add	w8, w8, #4
+	add	w8, w8, #2
 	str	w8, [sp]
 	b	LBB2_1
 LBB2_4:

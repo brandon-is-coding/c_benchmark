@@ -11,11 +11,14 @@ Benchmark1:
 	How fast should the CPU do 10M additions?
 		assuming 1 adds per clock cycle
 			4.5e9 adds per second
-			10e6/4.5e9 = 0.002222 seconds ~ 22.22ms
+			10e6/4.5e9 = 0.002222 seconds ~ 2.22ms
 		assuming 2 adds per clock cycle
 			2*4.5e9 adds per second
-			10e6/9.0e9 = 0.0111 seconds ~ 11.11ms
+			10e6/9.0e9 = 0.0111 seconds ~ 1.11ms
 
+		assuming 4 adds per clock cycle
+			4*4.5e9 = 18e9 adds per second
+			10e6/
 
 
 	C output:

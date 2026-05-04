@@ -23,14 +23,10 @@ Benchmark1:
 		vec_add2 took 0.015626 seconds
 		vec_add3 took 0.009897 seconds
 
-
 	julia output:
-		add_vec1:	
-		  0.054115 seconds (2.00 k allocations: 46.906 MiB, 93.57% gc time)
-		add_vec2:	
-		  0.001644 seconds (2 allocations: 48.031 KiB)
-		add_vec3:	
-		  0.004973 seconds (3 allocations: 48.062 KiB)
+		add_vec1: 0.054115 seconds (2.00 k allocations: 46.906 MiB, 93.57% gc time)
+		add_vec2: 0.001644 seconds (2 allocations: 48.031 KiB)
+		add_vec3: 0.004973 seconds (3 allocations: 48.062 KiB)
 
 
 

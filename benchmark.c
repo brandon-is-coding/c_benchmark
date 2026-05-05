@@ -83,7 +83,6 @@ void benchmark1(){
 
 
 int main(){
-	// printf("%lu",sizeof)
 	benchmark1();
 	return 0;
 }

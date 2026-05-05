@@ -54,7 +54,7 @@ void benchmark1(){
 	printf("vec_add1 took %f seconds\n",elapsed);
 
 
-	//BENCHMARK CODE FOR vec_add1
+	//BENCHMARK CODE FOR vec_add2
 	clock_gettime(CLOCK_MONOTONIC, &start);
 	int *C = malloc(sizeof(int) * n);
 	for(int i=0;i<trials;i++){
@@ -62,10 +62,11 @@ void benchmark1(){
 	}
 	free(C);
 	clock_gettime(CLOCK_MONOTONIC, &end);
-
 	elapsed = ((end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / (1e9));
 	printf("vec_add2 took %f seconds\n",elapsed);
 
+	
+	//BENCHMARK code for vec_add3
 	clock_gettime(CLOCK_MONOTONIC, &start);
 	C = malloc(sizeof(int) * n);
 	for(int i=0;i<trials;i++){
@@ -73,9 +74,10 @@ void benchmark1(){
 	}
 	free(C);
 	clock_gettime(CLOCK_MONOTONIC, &end);
-
 	elapsed = ((end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / (1e9));
 	printf("vec_add3 took %f seconds\n",elapsed);
+	
+
 	return;
 }
 

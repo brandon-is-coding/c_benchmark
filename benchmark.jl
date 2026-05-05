@@ -67,12 +67,6 @@ end
 # benchmark1()
 
 
-# function benchmark2()
-
-
-# function()
-# end
-
 function GenCode_vec_add1()
 	n=Int32(10000)
 	A=rand(Int32(1):Int32(1000),n)
